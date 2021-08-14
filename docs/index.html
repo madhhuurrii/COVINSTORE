@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
      <link rel="stylesheet" href="styles/styles.css" />
-    <title>Hello, world!</title>
+    <title>COVINSTORE</title>
   </head>
   <body>
     <header>
@@ -45,9 +45,9 @@
             </div>
           </nav>
     </header>
-    <main class="m-5">
+    <main class="m-lg-5 m-md-1">
        <section>
-        <div class="container">
+        <div class="container p-3">
             <div class="row">
                 <div class="col-md-6">
                        <h3 class="text-center pb-4">About COVINSTORE</h3>
@@ -62,11 +62,35 @@
         </div>
        </section>
        <section>
-           <div class="container p-5">
-               <div class="text-center">
+           <div class="container p-lg-5 p-md-0">
+               <h2 class="text-center pb-4">
                    WHAT WE OFFER
-               </div>
+               </h2>
+              <div class="container cov-card p-3">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <img src="images/undraw_medical_care_movn 1.png" class="d-block w-100" alt="" >
+                      </div>
+                      <div class="col-md-8">
+                          <h3 class="text-center pb-2">Our Offers</h3>
+                          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eum, nobis modi ex quia blanditiis sapiente ullam assumenda quaerat ea et mollitia in voluptatibus eos ab quibusdam quam. Sequi, placeat!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="p-3">
 
+              </div>
+              <div class="container cov-card p-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/undraw_medical_care_movn 1.png" class="d-block w-100" alt="" >
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="text-center pb-2">Our Offers</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eum, nobis modi ex quia blanditiis sapiente ullam assumenda quaerat ea et mollitia in voluptatibus eos ab quibusdam quam. Sequi, placeat!</p>
+                    </div>
+                </div>
+            </div>
            </div>
        </section>
     </main>
@@ -81,49 +105,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
-    <script>
-        // Select dom items
-        const menuBtn =
-            document.querySelector(".menu-btn");
  
-        const menu =
-            document.querySelector(".menu");
- 
-        const menuNav =
-            document.querySelector(".menu-nav");
- 
-        const menuBranding =
-            document.querySelector(".menu-branding");
- 
-        const navItems =
-            document.querySelectorAll(".nav-item");
-  // Set the initial state of the menu
-  let showMenu = false;
- 
- menuBtn.addEventListener("click", toggleMenu);
-
- function toggleMenu() {
-     if (!showMenu) {
-         menuBtn.classList.add("close");
-         menu.classList.add("show");
-         menuNav.classList.add("show");
-         menuBranding.classList.add("show");
-         navItems.forEach((item) =>
-             item.classList.add("show"));
-
-         // Reset the menu state
-         showMenu = true;
-     } else {
-         menuBtn.classList.remove("close");
-         menu.classList.remove("show");
-         menuNav.classList.remove("show");
-         menuBranding.classList.remove("show");
-         navItems.forEach((item) =>
-             item.classList.remove("show"));
-              // Reset the menu state
-              showMenu = false;
-            }
-        }
-    </script>
   </body>
 </html>
+
+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
