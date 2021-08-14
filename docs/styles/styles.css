@@ -8,4 +8,5 @@
 .cov-card{
     background-color: #EEFBF2;
     border: 2px solid #29A0B1;
+    border-radius: 12px;
 }
