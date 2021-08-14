@@ -1,7 +1,14 @@
 const express = require("express");
+fs = require("fs");
+readline = require("readline");
+google = require("googleapis");
+request = require("request");
 const app = express();
 
+
 // const covRoute = require('./routes/cov');
+
+// app.use(express.static(_dirname+'/public'));
 
 //Middleware
 app.use(express.static('public'));
