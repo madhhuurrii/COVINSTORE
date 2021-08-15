@@ -7,6 +7,9 @@ router.get('/',(req,res)=>{
 router.get('/index1',(req,res)=>{
   res.render('index1');
 })
+router.get('/index2',(req,res)=>{
+  res.render('index2');
+})
 // router.post('/',(req,res)=>{
 //     const number = req.body.number;
 //     const email = req.body.email;
@@ -39,4 +42,6 @@ router.post("/", (req, res) => {
   
     res.render("success")
   })
+  
+
 module.exports = router;
