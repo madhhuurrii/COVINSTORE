@@ -3,6 +3,7 @@
 *{
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 .cov-nav{
     background-color: #167577f6;
