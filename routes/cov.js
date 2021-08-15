@@ -4,7 +4,9 @@ const router = require('express').Router();
 router.get('/',(req,res)=>{
     res.render('index');
 })
-
+router.get('/index1',(req,res)=>{
+  res.render('index1');
+})
 // router.post('/',(req,res)=>{
 //     const number = req.body.number;
 //     const email = req.body.email;
