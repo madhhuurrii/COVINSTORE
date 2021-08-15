@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVINSTORE</title>
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+       /> 
+  
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+ 
+    <header>
+        <nav class="navbar p-2 navbar-expand-lg navbar-light cov-nav">
+            <div class="container-fluid mx-lg-5 p-2">
+              <a class="navbar-brand text-white mx-lg-5 " href="index.html"><i data-feather="activity"></i>COVINSTORE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-3 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                  <li class="nav-item mx-5">
+                    <a class="nav-link text-white active" aria-current="page" href="index.html">ABOUT COVINSTORE</a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link text-white" href="index1.html">WHAT WE OFFER</a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link text-white" href="index1.html"  role="button">
+                      SEARCH PRODUCTS
+                    </a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">ADD PRODUCTS</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="cov-container1">
+    <div class="table-wrapper">
+      <table class="table-users">
+        <tr>
+          <th>Firts Name</th>
+          <th>Last Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </table>
+      <button class="btn btn-add">Add User</button>
+    </div>
+    <!-- Add Modal -->
+    <div class="add-modal modal-wrapper">
+      <div class="cov-modal">
+        <div class="modal-header"><h3>Add New User</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="firstName" placeholder="First Name">
+            <input type="text" name="lastName" placeholder="Last Name">
+            <input type="number" name="phone" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <button class="btn btn-modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="edit-modal modal-wrapper">
+      <div class="cov-modal">
+        <div class="modal-header"><h3>Edit User</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="firstName" placeholder="First Name">
+            <input type="text" name="lastName" placeholder="Last Name">
+            <input type="number" name="phone" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <button class="btn btn-modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+   <!-- Optional JavaScript; choose one of the two! -->
+   <script src="https://unpkg.com/feather-icons"></script>
+   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <!--
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+   -->
+   <script src="https://use.fontawesome.com/ce94556118.js"></script>
+
+
+<script>
+     feather.replace()
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCmM_jweicRE_IAvtOHO918FX7NsP51m8A",
+    authDomain: "crud-app-2d0d0.firebaseapp.com",
+    projectId: "crud-app-2d0d0",
+    storageBucket: "crud-app-2d0d0.appspot.com",
+    messagingSenderId: "239350461256",
+    appId: "1:239350461256:web:50a3b6c8d788e673beb97d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  db.settings({ timestampsInSnapshots: true });   
+</script>
+    <script src="./script.js"></script>
+</body>
+</html>
