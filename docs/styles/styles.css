@@ -10,3 +10,12 @@
     border: 2px solid #29A0B1;
     border-radius: 12px;
 }
+.underline-overall-blue::before {
+	content: '';
+	position: absolute;
+	width: 60%;
+	height: 4px;
+	left: 20%;
+	bottom: -10px;
+	background: #167577f6;
+}
