@@ -18,9 +18,9 @@ const renderUser = doc => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().firstName}</td>
-      <td>${doc.data().lastName}</td>
+      <td>${doc.data().address}</td>
       <td>${doc.data().phone}</td>
-      <td>${doc.data().email}</td>
+      <td>${doc.data().product}</td>
       <td>
         <button class="btn btn-edit">Edit</button>
         <button class="btn btn-delete">Delete</button>
@@ -36,9 +36,9 @@ const renderUser = doc => {
 
     id = doc.id;
     editModalForm.firstName.value = doc.data().firstName;
-    editModalForm.lastName.value = doc.data().lastName;
+    editModalForm.lastName.value = doc.data().address;
     editModalForm.phone.value = doc.data().phone;
-    editModalForm.email.value = doc.data().email;
+    editModalForm.email.value = doc.data().product;
 
   });
 
@@ -59,9 +59,9 @@ btnAdd.addEventListener('click', () => {
   addModal.classList.add('modal-show');
 
   addModalForm.firstName.value = '';
-  addModalForm.lastName.value = '';
+  addModalForm.address.value = '';
   addModalForm.phone.value = '';
-  addModalForm.email.value = '';
+  addModalForm.product.value = '';
 });
 
 // User click anyware outside the modal
@@ -106,9 +106,9 @@ addModalForm.addEventListener('submit', e => {
   e.preventDefault();
   db.collection('users').add({
     firstName: addModalForm.firstName.value,
-    lastName: addModalForm.lastName.value,
+    lastName: addModalForm.address.value,
     phone: addModalForm.phone.value,
-    email: addModalForm.email.value,
+    email: addModalForm.product.value,
   });
   modalWrapper.classList.remove('modal-show');
 });
@@ -118,9 +118,9 @@ editModalForm.addEventListener('submit', e => {
   e.preventDefault();
   db.collection('users').doc(id).update({
     firstName: editModalForm.firstName.value,
-    lastName: editModalForm.lastName.value,
+    lastName: editModalForm.address.value,
     phone: editModalForm.phone.value,
-    email: editModalForm.email.value,
+    email: editModalForm.product.value,
   });
   editModal.classList.remove('modal-show');
   
