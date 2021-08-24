@@ -36,9 +36,9 @@ const renderUser = doc => {
 
     id = doc.id;
     editModalForm.firstName.value = doc.data().firstName;
-    editModalForm.lastName.value = doc.data().address;
+    editModalForm.address.value = doc.data().address;
     editModalForm.phone.value = doc.data().phone;
-    editModalForm.email.value = doc.data().product;
+    editModalForm.product.value = doc.data().product;
 
   });
 
